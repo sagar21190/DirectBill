@@ -5,3 +5,6 @@ run using -tomcat:run -Dmaven.tomcat.port=9090
 
 2.test with url: http://localhost:9090/DirectBill/testService/testMsg
 
+ref-url
+https://howtodoinjava.com/jersey/jersey2-hello-world-example/
+
