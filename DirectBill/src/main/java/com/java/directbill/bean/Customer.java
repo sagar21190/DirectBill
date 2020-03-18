@@ -2,24 +2,25 @@ package com.java.directbill.bean;
 
 import com.google.gson.Gson;
 
-public class Customer {
+public class Customer extends UserDetails {
 
 	private Integer cId;
-	private String cName;
-	private String cAdd;
-	private String cAdd2;
-	private String cMobile;
-	private String cMobile2;
-	private String emailId;
-	private String birthDate;
-	private Integer status = 1;
+	private String userId;
+	private String sessionId;
+	private String loginAttempt;
+	private String isLock;
+	private String isActive;
 	private String createdDate;
 	private String updatedDate;
+	
+	public Customer() {
+		super();
+	}
 
-	public Customer(int cId, String cName) {
+	public Customer(int cId, String fName) {
 		super();
 		this.cId = cId;
-		this.cName = cName;
+		this.fName = fName;
 	}
 
 	public Integer getcId() {
@@ -28,70 +29,6 @@ public class Customer {
 
 	public void setcId(Integer cId) {
 		this.cId = cId;
-	}
-
-	public String getcAdd2() {
-		return cAdd2;
-	}
-
-	public void setcAdd2(String cAdd2) {
-		this.cAdd2 = cAdd2;
-	}
-
-	public String getcMobile2() {
-		return cMobile2;
-	}
-
-	public void setcMobile2(String cMobile2) {
-		this.cMobile2 = cMobile2;
-	}
-
-	public String getEmailId() {
-		return emailId;
-	}
-
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
-
-	public String getBirthDate() {
-		return birthDate;
-	}
-
-	public void setBirthDate(String birthDate) {
-		this.birthDate = birthDate;
-	}
-
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-
-	public String getcName() {
-		return cName;
-	}
-
-	public void setcName(String cName) {
-		this.cName = cName;
-	}
-
-	public String getcAdd() {
-		return cAdd;
-	}
-
-	public void setcAdd(String cAdd) {
-		this.cAdd = cAdd;
-	}
-
-	public String getcMobile() {
-		return cMobile;
-	}
-
-	public void setcMobile(String cMobile) {
-		this.cMobile = cMobile;
-	}
-
-	public Integer getStatus() {
-		return status;
 	}
 
 	public String getCreatedDate() {
@@ -108,6 +45,46 @@ public class Customer {
 
 	public void setUpdatedDate(String updatedDate) {
 		this.updatedDate = updatedDate;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getSessionId() {
+		return sessionId;
+	}
+
+	public void setSessionId(String sessionId) {
+		this.sessionId = sessionId;
+	}
+
+	public String getIsLock() {
+		return isLock;
+	}
+
+	public void setIsLock(String isLock) {
+		this.isLock = isLock;
+	}
+
+	public String getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(String isActive) {
+		this.isActive = isActive;
+	}
+
+	public String getLoginAttempt() {
+		return loginAttempt;
+	}
+
+	public void setLoginAttempt(String loginAttempt) {
+		this.loginAttempt = loginAttempt;
 	}
 
 	@Override
