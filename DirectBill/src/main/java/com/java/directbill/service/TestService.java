@@ -1,10 +1,9 @@
 package com.java.directbill.service;
 
-import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Singleton
+//@Singleton
 @Path("/testService")
 public class TestService {
 
